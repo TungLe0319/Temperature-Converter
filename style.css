@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(133, 133, 133);
+  background: linear-gradient(
+    93deg,
+    rgba(133, 133, 133, 1) 0%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/* VIEWPORT HEIGHT DOESNT CARE ABOUT ANYTHING ELSE IT WORKS */
+div {
+  height: 33.33vh;
+}
+
+#fahrenheit {
+  border-bottom: 4px solid white;
+  border-top: 4px solid white;
+}
+
+input[type='number'] {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: rgb(202, 202, 202);
+  font-size: 10em;
+  font-family: 'Asap', sans-serif;
+  background-color: black;
+  transition: hue;
+  border: 0;
+}
+
+/*NOTE Double Colon means PseudoElement */
+::placeholder {
+  color: brown;
+}
